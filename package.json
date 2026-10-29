@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-creditcard",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Credit-card number validation MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-creditcard": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "creditcard"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-creditcard.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/creditcard",
   "pipeworx": {
-    "sourceHash": "v1-023cfaba3fd4e5ee024e915dff0d1b65d2f5adddc7c2536a5aeabd9a679a3a6d",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "mode": "gateway",
+    "slug": "creditcard",
+    "gatewaySlug": "creditcard",
+    "sourceHash": "v1-f19b1eab73c33d0e00b2b5821c33526fd6433b94b1e67425631c7c05b091aa8d",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
