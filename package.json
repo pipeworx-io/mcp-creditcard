@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-creditcard",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Credit-card number validation MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "creditcard",
     "gatewaySlug": "creditcard",
-    "sourceHash": "v1-f19b1eab73c33d0e00b2b5821c33526fd6433b94b1e67425631c7c05b091aa8d",
-    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
+    "sourceHash": "v1-433e0e2ff7efc20f740d04c1eb2d995e22bf59b5c71fa93fdfe6375e83d058bd",
+    "sourceCommit": "8cc978183948532674e797c429305c9d8ab2a1c3"
   }
 }
